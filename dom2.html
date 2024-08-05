@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id = "bgclr">
+
+    <input type="text" id="inp1" placeholder="Enter Your First Number">
+    <input type="text" id="inp2" placeholder="Enter Your Second Numbber">
+    <select name="" id="toSelect">
+        <option value="none">None</option>
+        <option value="add">Add</option>
+        <option value="sub">Sub</option>
+        <option value="mul">Mul</option>
+        <option value="divide">Divide</option>
+    </select>
+    <script>
+        document.getElementById("toSelect").onclick = function(){
+
+            let data = document.getElementById("toSelect").value;
+            
+            let num1 = Number(document.getElementById("inp1").value);
+            let num2 = Number(document.getElementById("inp2").value);
+
+            if(data=="add"){
+                console.log(num1+num2)
+            }
+
+            else if(data=="sub"){
+                console.log(num1-num2)
+            }
+            
+               
+        }
+    </script>
+</body>
+</html>
